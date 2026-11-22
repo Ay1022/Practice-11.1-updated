@@ -6,6 +6,11 @@
 
 function power(base, exponent) {
   // your code
+  let total = 1;
+  for(let i=1;i <= exponent; i++){
+    total = total * base;
+  }
+  return total;
 }
 
 // Expected output:

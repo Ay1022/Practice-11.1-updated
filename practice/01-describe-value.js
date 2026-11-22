@@ -5,7 +5,12 @@
 // - Everything else: return typeof value.
 
 function describeValue(value) {
-  // your code
+  if (value === 'null'){
+    return "null"
+  }
+  if (Array.isArray(value)){return 'Array'}
+  if (Number.isNaN(value)){return 'Nan'}
+  return typeof value;
 }
 
 // Expected output:
